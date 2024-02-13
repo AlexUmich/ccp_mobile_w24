@@ -1,0 +1,102 @@
+/*Add padding and margin to space out the page.
+Make the font larger too.*/
+body{
+	margin:1%;
+	font-size:125%;
+}
+
+/*Make the h1 heading bigger with a bold font*/
+h1{
+	font-size: 3em; 
+  text-align: center;
+	font-weight: bold;
+  border-bottom: 3px solid red;
+  background-color: turquoise;
+}
+
+.active{
+	background: white;
+    text-transform: uppercase;
+	text-align: center;
+}
+
+.active a{
+	text-decoration: none;;
+}
+
+/*Style the images*/
+img{
+    height: 300px;
+	  width:auto;
+    border: 3px solid blue;
+    padding: 25px;
+    border-radius: 20px;
+    margin: 5px;
+	  margin-left: 10%
+}
+
+/*Make the h2 heading match h1*/
+h2{
+	font-size: 2em; 
+	font-weight: bold;
+}
+
+h3 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/*Improve the spacing for paragraphs AND headings*/
+p, h1, h2 {
+    padding: 10px;
+}
+
+/*Add borders around the main components and some
+space too*/
+header, main, footer{
+	border: 3px solid red;
+	margin: 10px 0;
+}
+
+
+/*Change the styling for all of the list 
+items in the nav section*/
+nav ul li{
+	background-color: turquoise;
+	padding:10px;
+	width:30%;
+	border:1px solid black;
+	display: inline-block;
+	width: 20%;
+}
+
+nav ul li a:hover {
+  background-color: magenta;
+}
+
+a:visited{color:#0000FF}
+
+#main > div{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.skip {
+  display: block;
+  background-color: magenta;
+  font-weight: bold;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.skip:not(:focus-visible) {
+  position: absolute;
+  left: -9999px;
+}
+
+.skip:focus-visible {
+  position: relative;
+  left: auto;
+}
